@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "name": "Americano",
+    "price": 5.0,
+    "imgUrl": "/assets/images/americano.jpg",
+    "slug": "americano",
+    "type": "drinks"
+  },
+  {
+    "id": 2,
+    "name": "Espresso",
+    "price": 3.5,
+    "imgUrl": "/assets/images/espresso.jpg",
+    "slug": "espresso",
+    "type": "drinks"
+  },
+  {
+    "id": 3,
+    "name": "Cappuccino",
+    "price": 5.5,
+    "imgUrl": "/assets/images/cappuccino.webp",
+    "slug": "cappuccino",
+    "type": "drinks"
+  },
+  {
+    "id": 4,
+    "name": "Latte",
+    "price": 4.0,
+    "imgUrl": "/assets/images/latte.jpg",
+    "slug": "latte",
+    "type": "drinks"
+  },
+  {
+    "id": 5,
+    "name": "Macchiato",
+    "price": 4.5,
+    "imgUrl": "/assets/images/macchiato.webp",
+    "slug": "macchiato",
+    "type": "drinks"
+  },
+  {
+    "id": 6,
+    "name": "Water",
+    "price": 1.5,
+    "imgUrl": "/assets/images/water.avif",
+    "slug": "water",
+    "type": "drinks"
+  },
+  {
+    "id": 7,
+    "name": "Orange Juice",
+    "price": 3.0,
+    "imgUrl": "/assets/images/orange-j.jpg",
+    "slug": "orange-juice",
+    "type": "drinks"
+  },
+  {
+    "id": 8,
+    "name": "Apple Juice",
+    "price": 3.0,
+    "imgUrl": "/assets/images/apple-j.jpg",
+    "slug": "apple-juice",
+    "type": "drinks"
+  },
+  {
+    "id": 9,
+    "name": "Strawberry Juice",
+    "price": 3.0,
+    "imgUrl": "/assets/images/strawberry-j.jpg",
+    "slug": "strawberry-juice",
+    "type": "drinks"
+  },
+  {
+    "id": 10,
+    "name": "Pineapple Juice",
+    "price": 3.0,
+    "imgUrl": "/assets/images/pineapple-j.jpg",
+    "slug": "pineapple-juice",
+    "type": "drinks"
+  },
+  {
+    "id": 11,
+    "name": "Pasion Fruit Juice",
+    "price": 3.0,
+    "imgUrl": "/assets/images/passion-fruit-j.jpg",
+    "slug": "passion-fruit-juice",
+    "type": "drinks"
+  },
+  {
+    "id": 12,
+    "name": "Tea",
+    "price": 4.0,
+    "imgUrl": "/assets/images/tea.jpg",
+    "slug": "tea",
+    "type": "drinks"
+  },
+  {
+    "id": 13,
+    "name": "Carrot Cake",
+    "price": 5.0,
+    "imgUrl": "/assets/images/carrot-cake.jpg",
+    "slug": "carrot-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 14,
+    "name": "Chocolate Cake",
+    "price": 5.5,
+    "imgUrl": "/assets/images/chocolate-cake.jpg",
+    "slug": "chocolate-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 15,
+    "name": "Red Velvet Cake",
+    "price": 6.0,
+    "imgUrl": "/assets/images/red-velvet-cake.avif",
+    "slug": "red-velvet-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 16,
+    "name": "Lemon Cake",
+    "price": 6.0,
+    "imgUrl": "/assets/images/lemon-cake.webp",
+    "slug": "lemon-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 17,
+    "name": "Salted Caramel Cake",
+    "price": 7.0,
+    "imgUrl": "/assets/images/salted-caramel-cake.jpg",
+    "slug": "salted-caramel-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 18,
+    "name": "Banana Cake",
+    "price": 5.0,
+    "imgUrl": "/assets/images/banana-cake.jpg",
+    "slug": "banana-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 19,
+    "name": "Dulce de Leche Cake",
+    "price": 7.0,
+    "imgUrl": "/assets/images/dulce-de-leche-cake.jpg",
+    "slug": "dulce-de-leche-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 20,
+    "name": "Passion Fruit Cake",
+    "price": 5.0,
+    "imgUrl": "/assets/images/passion-fruit-cake.jpg",
+    "slug": "passion-fruit-cake",
+    "type": "cakes"
+  },
+  {
+    "id": 21,
+    "name": "Apple Pie",
+    "price": 6.0,
+    "imgUrl": "/assets/images/apple-pie.jpg",
+    "slug": "apple-pie",
+    "type": "pies"
+  },
+  {
+    "id": 22,
+    "name": "Chocolate Pie",
+    "price": 6.5,
+    "imgUrl": "/assets/images/chocolate-pie.jpg",
+    "slug": "chocolate-pie",
+    "type": "pies"
+  },
+  {
+    "id": 23,
+    "name": "Lemon Pie",
+    "price": 6.0,
+    "imgUrl": "/assets/images/lemon-pie.avif",
+    "slug": "lemon-pie",
+    "type": "pies"
+  },
+  {
+    "id": 24,
+    "name": "Banana Pie",
+    "price": 6.0,
+    "imgUrl": "/assets/images/banana-pie.avif",
+    "slug": "banana-pie",
+    "type": "pies"
+  },
+  {
+    "id": 25,
+    "name": "Chicken Pie",
+    "price": 8.0,
+    "imgUrl": "/assets/images/chicken-pie.jpg",
+    "slug": "chicken-pie",
+    "type": "pies"
+  },
+  {
+    "id": 26,
+    "name": "Broccoli Pie",
+    "price": 7.5,
+    "imgUrl": "/assets/images/broccoli-pie.jpg",
+    "slug": "broccoli-pie",
+    "type": "pies"
+  },
+  {
+    "id": 27,
+    "name": "Steak Pie",
+    "price": 9.0,
+    "imgUrl": "/assets/images/steak-pie.jpg",
+    "slug": "steak-pie",
+    "type": "pies"
+  },
+  {
+    "id": 28,
+    "name": "Roasted Veggies Pie",
+    "price": 8.0,
+    "imgUrl": "/assets/images/roasted-veggies-pie.jpg",
+    "slug": "roasted-veggies-pie",
+    "type": "pies"
+  },
+  {
+    "id": 29,
+    "name": "Chocolate Croissant",
+    "price": 5.0,
+    "imgUrl": "/assets/images/chocolate-croissant.avif",
+    "slug": "chocolate-croissant",
+    "type": "others"
+  },
+  {
+    "id": 30,
+    "name": "Dulce De Leche Croissant",
+    "price": 6.0,
+    "imgUrl": "/assets/images/dulce-de-leche-croissant.jpg",
+    "slug": "dulce-de-leche-croissant",
+    "type": "others"
+  },
+  {
+    "id": 31,
+    "name": "Éclair",
+    "price": 5.0,
+    "imgUrl": "/assets/images/eclair.jpg",
+    "slug": "éclair",
+    "type": "others"
+  },
+  {
+    "id": 32,
+    "name": "Cinnamon Rolls",
+    "price": 7.0,
+    "imgUrl": "/assets/images/cinnamon-rolls.webp",
+    "slug": "cinnamon-rolls",
+    "type": "others"
+  },
+  {
+    "id": 33,
+    "name": "Macaron",
+    "price": 8.0,
+    "imgUrl": "/assets/images/macarons.jpg",
+    "slug": "macaron",
+    "type": "others"
+  },
+  {
+    "id": 34,
+    "name": "Pancakes",
+    "price": 6.0,
+    "imgUrl": "/assets/images/pancakes.jpg",
+    "slug": "pancakes",
+    "type": "others"
+  },
+  {
+    "id": 35,
+    "name": "Brownie",
+    "price": 6.0,
+    "imgUrl": "/assets/images/brownie.jpg",
+    "slug": "brownie",
+    "type": "others"
+  },
+  {
+    "id": 36,
+    "name": "Cookies",
+    "price": 6.5,
+    "imgUrl": "/assets/images/cookies.jpg",
+    "slug": "cookies",
+    "type": "others"
+  }
+]
