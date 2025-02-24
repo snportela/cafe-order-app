@@ -4,7 +4,7 @@ import Coffee from "/assets/images/coffee-latte.png";
 import Cake from "/assets/images/cake.png";
 import Pie from "/assets/images/pie.png";
 import Pancake from "/assets/images/pancake.png";
-import MenuItem from "../../components/menu-item/menu-item";
+import MenuItem from "../../components/menu-item";
 import Item from "../../data/menu.json";
 import Header from "../../components/header";
 import { Link } from "react-router-dom";

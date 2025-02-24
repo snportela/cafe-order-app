@@ -1,1 +1,58 @@
 @use "../../styles/variables" as *
+
+
+.order
+    width: 30%
+    height: 100%
+    z-index: 99999999
+    position: fixed
+    right: 0
+    bottom: 0
+    background-color: $rose
+    color: $brown
+    overflow: auto
+
+    .order-top
+        padding: 5%
+
+        .close-btn
+            background: none
+            border: none
+            cursor: pointer
+
+        h1
+            text-align: center
+
+
+    .total
+        text-align: center
+        font-weight: bold
+        font-size: 1.5rem
+        padding: 3% 0
+
+        &::before, &::after
+            content: ""
+            width: 80%
+            height: 2px
+            background-color: $brown
+            display: block
+            margin: 2% auto
+
+    .place-order
+        text-decoration: none
+        display: flex
+        justify-content: center
+        background-color: $pink
+        font-size: 1.75rem
+        color: $brown
+        font-weight: bold
+        width: 60%
+        margin: auto
+        border-radius: 20px
+        padding: 2%
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
+        
+
+
+            
+            

@@ -3,7 +3,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Item from "../../data/menu.json";
 import { useParams } from "react-router-dom";
-import MenuItem from "../../components/menu-item/menu-item";
+import MenuItem from "../../components/menu-item";
 
 const Menu = () => {
   let { category } = useParams();
