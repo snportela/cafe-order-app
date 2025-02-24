@@ -2,27 +2,36 @@
 
 .header
     width: 100%
-    background-color: $yellow
     color: $brown
-    display: flex
-    justify-content: space-between
-    padding: 1.5% 2% 
+    padding: 1.5% 3% 
     position: fixed
     top: 0
     z-index: 30
     font-size: 1.5rem
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+
+    .back-btn
+        border: none
+        border-radius: 50%
+        width: 3rem
+        height: 3rem
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+        background-color: $pink
+        display: flex
+        align-items: center
+        justify-content: center
+        float: left
+
 
     .waiter-icon
         position: relative
         border-radius: 50%
-        padding: .5% .75%
         width: 3rem
         height: 3rem
         background-color: $pink
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
         border: none
         cursor: pointer
+        float: right
 
     .order-quantity
         position: absolute

@@ -14,7 +14,7 @@ const MainMenu = () => {
 
   return (
     <>
-      <Header />
+      <Header showBackBtn={false} />
       <div className="main-menu">
         <div className="special-section">
           <h1>Special offers</h1>
