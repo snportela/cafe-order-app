@@ -27,18 +27,26 @@ const Order = ({ isOpen }: OrderProps) => {
               <OrderItem key={item.id} {...item} />
             ))}
           </div>
-          <div className="total">
-            Total{" "}
-            {formatCurrency(
-              orderItems.reduce((total, orderItem) => {
-                const item = OrderItems.find((i) => i.id === orderItem.id);
-                return total + (item?.price || 0) * orderItem.quantity;
-              }, 0)
-            )}
-          </div>
-          <Link to={"/menu"} className="place-order">
-            <span>Place Order</span>
-          </Link>
+          {orderItems.length > 0 && (
+            <>
+              <div className="total">
+                Total{" "}
+                {formatCurrency(
+                  orderItems.reduce((total, orderItem) => {
+                    const item = OrderItems.find((i) => i.id === orderItem.id);
+                    return total + (item?.price || 0) * orderItem.quantity;
+                  }, 0)
+                )}
+              </div>
+              <Link
+                onClick={closeOrder}
+                to={"/confirmation"}
+                className="place-order"
+              >
+                <span>Place Order</span>
+              </Link>
+            </>
+          )}
         </div>
       )}
     </>

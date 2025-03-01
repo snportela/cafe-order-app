@@ -1,10 +1,8 @@
-import Logo from "/assets/images/sasha-logo.png";
+import Logo from "/assets/icons/cafe-logo.png";
 import "./styles.sass";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const tableNumber: number = Math.ceil(Math.random() * 25);
-
   return (
     <div className="home">
       <div className="hero">
@@ -14,8 +12,6 @@ const Home = () => {
         </div>
       </div>
       <div className="bottom-section">
-        <p>Table {tableNumber}</p>
-
         <Link to={"/menu"} className="order-btn">
           ORDER
         </Link>

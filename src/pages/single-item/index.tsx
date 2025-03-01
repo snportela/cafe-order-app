@@ -17,9 +17,11 @@ const SingleItem = () => {
       <Header showBackBtn={true} backUrl={`/menu/${category}`} />
 
       {itemInfo.map((i) => (
-        <div key={i.id} className="container-top">
-          <div className="item-image">
-            <img src={i.imgUrl} alt="" />
+        <>
+          <div key={i.id} className="container-top">
+            <div className="item-image">
+              <img src={i.imgUrl} alt="" />
+            </div>
           </div>
           <div className="container-bottom">
             <div className="item-info">
@@ -33,7 +35,7 @@ const SingleItem = () => {
               <button onClick={() => decreaseOrderQuantity(i.id)}>-</button>
             </div>
           </div>
-        </div>
+        </>
       ))}
     </div>
   );

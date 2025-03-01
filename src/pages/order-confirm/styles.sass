@@ -1,0 +1,105 @@
+@use "../../styles/variables" as *
+
+.order-confirm
+    background-color: $beige
+    min-height: 100vh
+    padding: 3%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: 2rem
+    color: $brown
+    position: relative
+
+    .total
+        text-align: center
+        font-size: 1.5rem
+
+        &::before, &::after
+            content: ""
+            width: 90%
+            height: .5vh
+            background-color: $brown
+            display: block
+            margin: 2% auto
+
+    .buttons
+        display: flex
+        justify-content: space-around
+        font-weight: bold
+        font-size: 1.25rem
+
+        button
+            color: $brown
+            border: none
+            background-color: $yellow
+            padding: 2% 1%
+            border-radius: 20px
+            width: 20%
+            font-weight: bold
+            font-size: 1.25rem
+            cursor: pointer
+
+
+        a
+            text-decoration: none
+            color: $brown
+            background-color: $peach
+            padding: 2% 1%
+            border-radius: 20px
+            width: 15%
+            text-align: center
+
+    .modal-background
+        position: absolute
+        height: 100%
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: rgba(0, 0, 0, 0.233)
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .modal
+            background-color: $yellow
+            width: 30%
+            border-radius: 40px
+            padding: 2%
+            text-align: center
+            font-size: 1.5rem
+
+            p
+                margin: 5% 0
+
+            a
+                text-decoration: none
+                color: $brown
+                background-color: $rose
+                padding: 2% 3%
+                border-radius: 10px
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
+
+        
+@media screen and (max-width: 500px)
+    .order-confirm
+        justify-content: flex-start
+
+        .buttons
+            align-items: center
+
+            button
+                width: 35%
+
+            a
+                width: 30%
+
+        .modal-background
+            .modal
+                width: 60%
+
+
+
+
+

@@ -20,6 +20,7 @@ type OrderContext = {
   removeFromOrder: (id: number) => void;
   orderQuantity: number;
   orderItems: OrderItem[];
+  clearOrder: () => void;
 };
 
 const OrderContext = createContext({} as OrderContext);
@@ -82,6 +83,10 @@ export function OrderProvider({ children }: OrderProviderProps) {
     });
   }
 
+  function clearOrder() {
+    setOrderItems([]);
+  }
+
   return (
     <OrderContext.Provider
       value={{
@@ -93,6 +98,7 @@ export function OrderProvider({ children }: OrderProviderProps) {
         orderItems,
         openOrder,
         closeOrder,
+        clearOrder,
       }}
     >
       {children}

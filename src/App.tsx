@@ -4,6 +4,7 @@ import MainMenu from "./pages/main-menu";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SingleItem from "./pages/single-item";
 import { OrderProvider } from "./context/order-context";
+import OrderConfirm from "./pages/order-confirm";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/menu" element={<MainMenu />} />
           <Route path="/menu/:category" element={<Menu />} />
           <Route path="/menu/:category/:slug" element={<SingleItem />} />
+          <Route path="/confirmation" element={<OrderConfirm />} />
         </Routes>
       </OrderProvider>
     </BrowserRouter>

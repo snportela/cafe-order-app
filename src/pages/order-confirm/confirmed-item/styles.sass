@@ -1,0 +1,49 @@
+@use "../../../styles/variables" as *
+
+.confirmed-item
+    padding: 3% 5%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $brown
+    background-color: $pink
+    border-radius: 40px
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
+
+
+    .item-image
+        height: 25vh
+        flex-basis: 20%
+
+        img
+            display: block
+            width: 100%
+            height: 100%
+            border-radius: 40px
+
+    .item-info
+        flex-basis: 50%
+        display: flex
+        flex-direction: column
+        gap: 2vh
+
+        .item-name
+            font-size: 1.5rem
+
+    .quantity
+        font-size: 1.5rem
+
+@media screen and (max-width: 500px)
+    .confirmed-item
+
+        .item-image
+            height: 10vh
+            flex-basis: 25%
+
+            img
+                border-radius: 20px
+
+        .item-info
+
+            .item-name
+                font-size: 1.25rem

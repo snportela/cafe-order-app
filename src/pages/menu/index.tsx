@@ -7,7 +7,6 @@ import MenuItem from "../../components/menu-item";
 const Menu = () => {
   let { category } = useParams();
   let items = Item.filter((i) => i.type === category);
-  console.log(category);
 
   return (
     <>

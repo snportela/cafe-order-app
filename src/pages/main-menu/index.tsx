@@ -1,5 +1,5 @@
 import "./styles.sass";
-import Placeholder from "/assets/images/sasha-logo.png";
+import CakeAndCoffee from "/assets/images/cake-and-coffee.jpg"
 import Coffee from "/assets/images/coffee-latte.png";
 import Cake from "/assets/images/cake.png";
 import Pie from "/assets/images/pie.png";
@@ -9,8 +9,28 @@ import Item from "../../data/menu.json";
 import Header from "../../components/header";
 import { Link } from "react-router-dom";
 
+type MenuItemProps = {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  imgUrl: string;
+  slug: string;
+  type: string;
+};
+
 const MainMenu = () => {
-  const popular = Item.slice(0, 4);
+  let randomIds: number[] = [];
+  let popularItems: MenuItemProps[] = [];
+
+  for (let i = 0; i < 4; i++) {
+    const randomNumber: number = Math.ceil(Math.random() * 36);
+    randomIds.push(randomNumber);
+  }
+
+  randomIds.forEach((id) => {
+    popularItems.push(...Item.filter((i) => i.id === id));
+  });
 
   return (
     <>
@@ -25,7 +45,7 @@ const MainMenu = () => {
               explicabo, tenetur praesentium ratione corporis dolor nobis.
             </div>
             <div className="special-image">
-              <img src={Placeholder} alt="" />
+              <img src={CakeAndCoffee} alt="" />
             </div>
           </div>
         </div>
@@ -55,7 +75,7 @@ const MainMenu = () => {
         <div className="popular-section">
           <h1>Popular</h1>
           <div className="popular">
-            {popular.map((item) => {
+            {popularItems.map((item) => {
               return <MenuItem key={item.id} {...item} />;
             })}
           </div>

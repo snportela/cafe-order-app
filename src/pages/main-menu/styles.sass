@@ -25,17 +25,17 @@
                     font-size: 1.5rem
 
                 .special-image
-                    flex-basis: 70%
+                    flex-basis: 60%
                     height: 100%
                     width: 100%
                 
 
                     img
-                        float: right
                         display: block
                         margin: auto
-                        width: 15rem
-                        height: 20rem
+                        width: 100%
+                        height: 100%
+                        border-radius: 40px
 
     .categories-section
 
@@ -50,7 +50,7 @@
                 color: inherit
                 margin-top: 2vh
                 background-color: $pink
-                height: 15rem //13rem on small screens
+                height: 15rem
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
                 border-radius: 50%
                 display: flex
@@ -68,6 +68,21 @@
         .popular
             margin-top: 3vh
             display: grid
-            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr))
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
             gap: 5vw
 
+@media screen and (max-width: 500px)
+    .main-menu
+        .categories-section
+            .categories
+                padding: 0 10%   
+                .card
+                    height: 13rem
+
+        .special-section
+            .special
+                flex-direction: column-reverse
+                padding: 3%
+                
+                .special-text
+                    font-size: 1rem
