@@ -28,13 +28,23 @@
 <h2 id="about">📌 About</h2>
 
 <p>
-  With this app, the customers of 'Sasha`s Coffee Shop', would be able to see the stablishment`s menu and place their order through their devices. 
+  With this app, the customers of "Sasha's Coffee Shop", would be able to see the stablishment's menu and place their order through their devices. Here are some screenshots of the app:
 </p>
 
-<img src=".github/screenshot1.png" alt="Main menu" width="500px">
-<img src=".github/screenshot2.png" alt="Category menu" width="500px">
-<img src=".github/screenshot3.png" alt="Single Item page" width="500px">
-<img src=".github/screenshot4.png" alt="Order Tab" width="500px">
+<table>
+  <tr>
+    <td>Main menu</td>
+    <td>Category menu</td>
+    <td>Single Item page</td>
+    <td>Order Tab</td>
+  </tr>
+  <tr>
+    <td><img src=".github/screenshot1.png" alt="Main menu" width="430px"></td>
+    <td><img src=".github/screenshot2.png" alt="Category menu" width="430px"></td>
+    <td><img src=".github/screenshot3.png" alt="Single Item page" width="430px"></td>
+    <td><img src=".github/screenshot4.png" alt="Order Tab" width="430px"></td>
+  </tr>
+</table>
 
 <h2 id="requisites">📝 Prerequisites</h2>
 
