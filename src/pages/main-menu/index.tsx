@@ -8,6 +8,7 @@ import MenuItem from "../../components/menu-item";
 import Item from "../../data/menu.json";
 import Header from "../../components/header";
 import { Link } from "react-router-dom";
+import { formatCurrency } from "../../utilities/format-currency";
 
 type MenuItemProps = {
   id: number;
@@ -40,9 +41,8 @@ const MainMenu = () => {
           <h1>Special offers</h1>
           <div className="special">
             <div className="special-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
-              possimus fugiat autem sequi provident quos, unde itaque nisi
-              explicabo, tenetur praesentium ratione corporis dolor nobis.
+              <p>Special Combo!</p>
+              <p>Get a slice of cake + a coffee of your choice for only {formatCurrency(8.00)}</p>
             </div>
             <div className="special-image">
               <img src={CakeAndCoffee} alt="" />

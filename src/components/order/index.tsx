@@ -12,10 +12,11 @@ type OrderProps = {
 
 const Order = ({ isOpen }: OrderProps) => {
   const { closeOrder, orderItems } = useOrder();
+
   return (
     <>
-      {isOpen && (
-        <div className="order">
+      {isOpen ? (
+        <div className="order slide-in">
           <div className="order-top">
             <button onClick={closeOrder} className="close-btn">
               <img src={Close} alt="" />
@@ -48,6 +49,8 @@ const Order = ({ isOpen }: OrderProps) => {
             </>
           )}
         </div>
+      ) : (
+        <div className="order slide-out"></div>
       )}
     </>
   );
