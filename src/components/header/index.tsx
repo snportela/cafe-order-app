@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 
 type HeaderProps = {
   showBackBtn: boolean;
+  showOrderIcon: boolean;
   backUrl?: string;
 };
 
-const Header = ({ showBackBtn, backUrl }: HeaderProps) => {
+const Header = ({ showBackBtn, backUrl, showOrderIcon }: HeaderProps) => {
   const { openOrder, orderQuantity } = useOrder();
 
   return (
@@ -19,10 +20,16 @@ const Header = ({ showBackBtn, backUrl }: HeaderProps) => {
           <img src={Back} alt="" />
         </Link>
       )}
-      {orderQuantity > 0 && (
+      <Link to={"/menu"} className="header-title">
+        <img src="/assets/icons/cafe-logo.png" />
+        Sasha's Coffee Shop
+      </Link>
+      {showOrderIcon && (
         <button onClick={openOrder} className="waiter-icon">
           <img src={FoodTray} alt="" />
-          <div className="order-quantity">{orderQuantity}</div>
+          {orderQuantity > 0 && (
+            <div className="order-quantity">{orderQuantity}</div>
+          )}
         </button>
       )}
     </div>

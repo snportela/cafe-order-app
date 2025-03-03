@@ -322,5 +322,14 @@
     "imgUrl": "/assets/images/cookies.jpg",
     "slug": "cookies",
     "type": "others"
+  },
+  {
+    "id": 37,
+    "name": "Coffee + Slice of cake",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat commodi iure ipsum, reiciendis rem quibusdam aliquid magni quidem, id illo nam libero dolorem rerum nisi odio nihil delectus, sequi laboriosam!",
+    "price": 8.0,
+    "imgUrl": "/assets/images/cake-and-coffee.jpg",
+    "slug": "cake-and-coffee",
+    "type": "combo"
   }
 ]

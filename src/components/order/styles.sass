@@ -1,6 +1,5 @@
 @use "../../styles/variables" as *
 
-
 .order
     width: 30%
     height: 100%
@@ -12,6 +11,7 @@
     color: $brown
     overflow: auto
     transform: translateX(100%)
+    transition: 0.4s
 
     .order-top
         padding: 5%
@@ -53,28 +53,12 @@
         padding: 2%
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
 
+    .empty-order
+        text-align: center
+        margin-top: 50%
+
 .slide-in 
-    animation: slide-in 0.5s forwards
-    -webkit-animation: slide-in 0.5s forwards
-
-
-.slide-out 
-    animation: slide-out 0.5s forwards
-    -webkit-animation: slide-out 0.5s forwards
-
-    
-@keyframes slide-in 
-    100%  
-        transform: translateX(0%) 
-
-    
-@keyframes slide-out 
-    0%  
-        transform: translateX(0%) 
-    100%  
-        transform: translateX(100%) 
-
-
+    transform: translateX(0%)
 
 @media screen and (max-width: 500px)
     .order

@@ -2,12 +2,17 @@
 
 .header
     width: 100%
+    background-color: $yellow
     color: $brown
     padding: 1.5% 3% 
     position: fixed
     top: 0
     z-index: 30
     font-size: 1.5rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
 
     .back-btn
         border: none
@@ -20,6 +25,19 @@
         align-items: center
         justify-content: center
         float: left
+
+    a
+        text-decoration: none
+        color: $brown
+
+    .header-title
+        font-size: 1.25rem
+        display: flex
+        align-items: center
+
+        img
+            width: 48px
+            height: 48px
 
 
     .waiter-icon

@@ -1,5 +1,4 @@
 import "./styles.sass";
-import CakeAndCoffee from "/assets/images/cake-and-coffee.jpg"
 import Coffee from "/assets/images/coffee-latte.png";
 import Cake from "/assets/images/cake.png";
 import Pie from "/assets/images/pie.png";
@@ -24,30 +23,50 @@ const MainMenu = () => {
   let randomIds: number[] = [];
   let popularItems: MenuItemProps[] = [];
 
-  for (let i = 0; i < 4; i++) {
-    const randomNumber: number = Math.ceil(Math.random() * 36);
-    randomIds.push(randomNumber);
+  function generateUniqueRandom(maxNr: number) {
+    let random = Math.floor(Math.random() * maxNr + 1);
+
+    if (!randomIds.includes(random)) {
+      randomIds.push(random);
+      return random;
+    } else {
+      if (randomIds.length < maxNr) {
+        return generateUniqueRandom(maxNr);
+      } else {
+        console.log("No more numbers available.");
+        return false;
+      }
+    }
+  }
+
+  for (let index = 0; index < 4; index++) {
+    generateUniqueRandom(36);
   }
 
   randomIds.forEach((id) => {
     popularItems.push(...Item.filter((i) => i.id === id));
   });
 
+  const combo = Item[Item.length - 1];
+
   return (
     <>
-      <Header showBackBtn={false} />
+      <Header showBackBtn={false} showOrderIcon={true} />
       <div className="main-menu">
         <div className="special-section">
           <h1>Special offers</h1>
-          <div className="special">
+          <Link to={`/menu/${combo.type}/${combo.slug}`} className="special">
             <div className="special-text">
               <p>Special Combo!</p>
-              <p>Get a slice of cake + a coffee of your choice for only {formatCurrency(8.00)}</p>
+              <p>
+                Get a slice of cake + a coffee of your choice for only{" "}
+                {formatCurrency(combo.price)}
+              </p>
             </div>
             <div className="special-image">
-              <img src={CakeAndCoffee} alt="" />
+              <img src={combo.imgUrl} alt="" />
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="categories-section">

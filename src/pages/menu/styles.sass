@@ -2,10 +2,29 @@
 
 .menu
     background-color: $beige
+    margin-top: 2.5rem
     
     .banner
         height: 60vh
-        background-color: $peach
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        
+
+        &::after
+            content: ""
+            display: block
+            height: 60vh
+            position: absolute
+            top: 0
+            width: 100%
+            background-color: rgba(0, 0, 4, 0.486)
+
+        h1
+            color: $pink
+            z-index: 2
+            font-size: 4rem
 
         img
             display: block

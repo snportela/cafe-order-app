@@ -14,7 +14,7 @@ const SingleItem = () => {
 
   return (
     <div className="single-item">
-      <Header showBackBtn={true} backUrl={`/menu/${category}`} />
+      <Header showBackBtn={true} showOrderIcon={true} backUrl={`/menu/${category}`} />
 
       {itemInfo.map((i) => (
         <>

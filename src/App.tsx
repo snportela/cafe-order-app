@@ -5,10 +5,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SingleItem from "./pages/single-item";
 import { OrderProvider } from "./context/order-context";
 import OrderConfirm from "./pages/order-confirm";
+import ScrollToTop from "./components/scroll-to-top";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <OrderProvider>
         <Routes>
           <Route path="/" element={<Home />} />
