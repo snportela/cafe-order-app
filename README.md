@@ -31,6 +31,8 @@
   With this app, the customers of "Sasha's Coffee Shop", would be able to see the stablishment's menu and place their order through their devices. Here are some screenshots of the app:
 </p>
 
+Visit the [Sasha's Coffee Shop](https://sasha-coffee-shop.pages.dev/) website.
+
 <table>
   <tr>
     <td>Main menu</td>
