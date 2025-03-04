@@ -1,7 +1,7 @@
 @use "../../styles/variables" as *
 
 .order-confirm
-    background-color: $beige
+    background-color: $pink
     min-height: 100vh
     padding: 3%
     display: flex
@@ -36,7 +36,7 @@
         button
             color: $brown
             border: none
-            background-color: $peach
+            background-color: $green
             border: 1px solid $brown
             padding: 2% 1%
             border-radius: 20px
@@ -49,7 +49,7 @@
         a
             text-decoration: none
             color: $brown
-            background-color: $pink
+            background-color: $beige
             border: 1px solid $brown
             padding: 2% 1%
             border-radius: 20px
@@ -83,6 +83,7 @@
                 text-decoration: none
                 color: $brown
                 background-color: $rose
+                margin: 10% 0
                 padding: 2% 3%
                 border-radius: 10px
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
@@ -91,6 +92,7 @@
 @media screen and (max-width: 500px)
     .order-confirm
         justify-content: flex-start
+        gap: 1.25rem
 
         .buttons
             align-items: center
@@ -104,6 +106,7 @@
         .modal-background
             .modal
                 width: 60%
+                padding: 5%
 
 
 

@@ -1,6 +1,6 @@
 import "./styles.sass";
 import { useOrder } from "../../context/order-context";
-import ConfirmedItem from "./confirmed-item";
+import ConfirmedItem from "./components/confirmed-item";
 import { Link } from "react-router-dom";
 import { formatCurrency } from "../../utilities/format-currency";
 import OrderItems from "../../data/menu.json";

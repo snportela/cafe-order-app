@@ -15,7 +15,7 @@ const Menu = () => {
 
   return (
     <>
-      <Header showBackBtn={true} showOrderIcon={true} backUrl="/menu" />
+      <Header showBackBtn={true} showOrderIcon={true} />
       <div className="menu">
         <div
           className="banner"

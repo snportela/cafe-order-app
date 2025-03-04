@@ -1,6 +1,6 @@
 import "./styles.sass";
-import OrderItems from "../../../data/menu.json";
-import { formatCurrency } from "../../../utilities/format-currency";
+import OrderItems from "../../../../data/menu.json";
+import { formatCurrency } from "../../../../utilities/format-currency";
 
 type ConfirmedItemProps = {
   id: number;
@@ -20,9 +20,7 @@ const ConfirmedItem = ({ id, quantity }: ConfirmedItemProps) => {
         <span className="item-name">{item.name}</span>
         <span className="item-price">{formatCurrency(item.price)}</span>
       </div>
-      <div className="quantity">
-        x{quantity}
-      </div>
+      <div className="quantity">x{quantity}</div>
     </div>
   );
 };

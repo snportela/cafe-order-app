@@ -6,7 +6,7 @@ import { useOrder } from "../../context/order-context";
 import { formatCurrency } from "../../utilities/format-currency";
 
 const SingleItem = () => {
-  let { slug, category } = useParams();
+  let { slug } = useParams();
   const itemInfo = Item.filter((i) => i.slug === slug);
 
   const { increaseOrderQuantity, decreaseOrderQuantity, getItemQuantity } =
@@ -14,7 +14,7 @@ const SingleItem = () => {
 
   return (
     <div className="single-item">
-      <Header showBackBtn={true} showOrderIcon={true} backUrl={`/menu/${category}`} />
+      <Header showBackBtn={true} showOrderIcon={true} />
 
       {itemInfo.map((i) => (
         <>
