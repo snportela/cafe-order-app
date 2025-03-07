@@ -15,34 +15,39 @@ const OrderConfirm = () => {
     <>
       <Header showBackBtn={false} showOrderIcon={false} />
       <div className="order-confirm">
-        <h1>Order</h1>
-        {orderItems.map((item) => (
-          <ConfirmedItem key={item.id} {...item} />
-        ))}
-        <div className="total">
-          Total{" "}
-          {formatCurrency(
-            orderItems.reduce((total, orderItem) => {
-              const item = OrderItems.find((i) => i.id === orderItem.id);
-              return total + (item?.price || 0) * orderItem.quantity;
-            }, 0)
+        <div className="content">
+          <h1>Order</h1>
+          <div className="order-items">
+            {orderItems.map((item) => (
+              <ConfirmedItem key={item.id} {...item} />
+            ))}
+          </div>
+          <div className="total">
+            Total{" "}
+            {formatCurrency(
+              orderItems.reduce((total, orderItem) => {
+                const item = OrderItems.find((i) => i.id === orderItem.id);
+                return total + (item?.price || 0) * orderItem.quantity;
+              }, 0)
+            )}
+          </div>
+
+          <div className="buttons">
+            <Link to={"/menu"}>Cancel</Link>
+            <button onClick={() => setIsModalOpen(true)}>Confirm Order</button>
+          </div>
+          {isModalOpen && (
+            <div className="modal-background">
+              <div className="modal">
+                <p>Order Complete!</p>
+                <p>Your items will be delivered soon.</p>
+                <Link onClick={clearOrder} to={"/"}>
+                  Ok
+                </Link>
+              </div>
+            </div>
           )}
         </div>
-        <div className="buttons">
-          <Link to={"/menu"}>Cancel</Link>
-          <button onClick={() => setIsModalOpen(true)}>Confirm Order</button>
-        </div>
-        {isModalOpen && (
-          <div className="modal-background">
-            <div className="modal">
-              <p>Order Complete!</p>
-              <p>Your items will be delivered soon.</p>
-              <Link onClick={clearOrder} to={"/"}>
-                Ok
-              </Link>
-            </div>
-          </div>
-        )}
       </div>
     </>
   );

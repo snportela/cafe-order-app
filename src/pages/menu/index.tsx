@@ -17,21 +17,23 @@ const Menu = () => {
     <>
       <Header showBackBtn={true} showOrderIcon={true} />
       <div className="menu">
-        <div
-          className="banner"
-          style={{
-            backgroundImage: `url(/assets/images/${category}-banner.jpg)`,
-            backgroundPosition: "left",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <h1>{capitalize(category)}</h1>
-        </div>
-        <div className="items">
-          {items.map((item) => (
-            <MenuItem key={item.id} {...item} />
-          ))}
+        <div className="content">
+          <div
+            className="banner"
+            style={{
+              backgroundImage: `url(/assets/images/${category}-banner.jpg)`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <h1>{capitalize(category)}</h1>
+          </div>
+          <div className="items">
+            {items.map((item) => (
+              <MenuItem key={item.id} {...item} />
+            ))}
+          </div>
         </div>
       </div>
     </>

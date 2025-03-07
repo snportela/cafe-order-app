@@ -3,7 +3,7 @@
 .single-item
     background-color: $beige
     color: $brown
-    margin-top: 3.5rem
+    margin-top: 100px
     min-height: 100vh
 
     .container-top
@@ -23,6 +23,7 @@
                 display: block
                 max-width: 100%
                 max-height: 100%
+                object-fit: cover
                 margin: auto
 
     .container-bottom
@@ -46,24 +47,24 @@
                 font-size: 1.5rem
 
         .item-actions
-            border: 1px solid $brown
             display: flex
             align-items: center
             flex-wrap: nowrap
-            width: 30%
-            height: 10vh
+            width: 150px
+            height: 60px
             border-radius: 20px 
+            margin: auto
+
 
             button
                 border: none
                 background-color: $brown
                 color: $yellow
-                margin: auto
                 width: 100%
                 height: 100%
                 cursor: pointer
                 font-size: 1.75rem
-
+                width: 50px
 
                 &:first-child
                     border-radius: 20px 0 0 20px
@@ -71,24 +72,29 @@
                 &:nth-last-child(1)
                     border-radius: 0 20px 20px 0
                     
-
             span
-                padding: 3% 15%
                 font-size: 1.75rem
+                height: 60px
+                width: 60px
+                border: 1px solid $brown
+                display: flex
+                justify-content: center
+                align-items: center
 
-@media screen and (max-width: 500px)
+
+
+@media screen and (max-width: 1024px)
     .single-item
-        min-height: 95vh
-
         .container-top
             .item-image
                 height: 100%
                 img
                     border-radius: 0 0 40px 40px
 
-        .container-bottom
-            justify-items: center
-            .item-actions
-                width: 60%
-                height: 7.5vh
+@media screen and (min-width: 2000px)
+    .single-item
+        .container-top
+            .item-image
+                height: 50vh
+
 

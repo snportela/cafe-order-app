@@ -2,29 +2,34 @@
 
 .confirmed-item
     display: flex
-    justify-content: space-between
     align-items: center
+    width: 75%
+    margin: 20px auto
     color: $brown
     background-color: $rose
     border-radius: 40px
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
+    height: 125px
+
 
     .item-image
-        height: 30vh
-        flex-basis: 20%
+        height: 100%
+        width: 175px
 
         img
             display: block
             width: 100%
             height: 100%
+            object-fit: cover
             border-radius: 40px
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
 
     .item-info
-        flex-basis: 50%
         display: flex
         flex-direction: column
-        gap: 2vh
+        height: 100%
+        justify-content: space-between
+        padding: 20px
 
         .item-name
             font-size: 1.75rem
@@ -34,22 +39,25 @@
 
     .quantity
         font-size: 1.5rem
-        padding: 2%
+        margin-left: auto
+        padding-right: 20px
 
 @media screen and (max-width: 500px)
     .confirmed-item
-        height: 75px
+        height: 90px
+        width: 95%
         border-radius: 20px
+        margin: 10px auto
 
         .item-image
-            height: 100%
-            flex-basis: 25%
+            width: 125px
 
             img
                 border-radius: 20px
+                width: 125px
 
-        .item-info
-            gap: 10px
+        .item-info    
+            padding: 10px
 
             .item-name
                 font-size: 1.25rem
@@ -59,4 +67,3 @@
 
         .quantity
             font-size: 1.25rem
-            padding: 20px

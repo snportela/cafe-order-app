@@ -13,31 +13,34 @@ const SingleItem = () => {
     useOrder();
 
   return (
-    <div className="single-item">
+    <>
       <Header showBackBtn={true} showOrderIcon={true} />
-
-      {itemInfo.map((i) => (
-        <>
-          <div key={i.id} className="container-top">
-            <div className="item-image">
-              <img src={i.imgUrl} alt="" />
-            </div>
-          </div>
-          <div className="container-bottom">
-            <div className="item-info">
-              <p className="name">{i.name}</p>
-              <p className="description">{i.description}</p>
-              <p className="price">{formatCurrency(i.price)}</p>
-            </div>
-            <div className="item-actions">
-              <button onClick={() => increaseOrderQuantity(i.id)}>+</button>
-              <span>{getItemQuantity(i.id)}</span>
-              <button onClick={() => decreaseOrderQuantity(i.id)}>-</button>
-            </div>
-          </div>
-        </>
-      ))}
-    </div>
+      <div className="single-item">
+        <div className="content">
+          {itemInfo.map((i) => (
+            <>
+              <div key={i.id} className="container-top">
+                <div className="item-image">
+                  <img src={i.imgUrl} alt="" />
+                </div>
+              </div>
+              <div className="container-bottom">
+                <div className="item-info">
+                  <p className="name">{i.name}</p>
+                  <p className="description">{i.description}</p>
+                  <p className="price">{formatCurrency(i.price)}</p>
+                </div>
+                <div className="item-actions">
+                  <button onClick={() => increaseOrderQuantity(i.id)}>+</button>
+                  <span>{getItemQuantity(i.id)}</span>
+                  <button onClick={() => decreaseOrderQuantity(i.id)}>-</button>
+                </div>
+              </div>
+            </>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 
