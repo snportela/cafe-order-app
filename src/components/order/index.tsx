@@ -17,7 +17,10 @@ const Order = ({ isOpen }: OrderProps) => {
     <>
       <div className={"order " + (isOpen ? "slide-in" : "")}>
         <div className="order-top">
-          <button onClick={closeOrder} className="close-btn">
+          <button
+            onClick={() => closeOrder && closeOrder()}
+            className="close-btn"
+          >
             <img src={Close} alt="" />
           </button>
           <h1>Your Order </h1>

@@ -27,12 +27,20 @@ const OrderItem = ({ id, quantity }: OrderItemProps) => {
       </div>
       <div className="item-actions">
         <div className="change-quantity">
-          <button onClick={() => increaseOrderQuantity(id)}>+</button>
+          <button
+            onClick={() => decreaseOrderQuantity && decreaseOrderQuantity(id)}
+          >
+            -
+          </button>
           <span>{quantity}</span>
-          <button onClick={() => decreaseOrderQuantity(id)}>-</button>
+          <button
+            onClick={() => increaseOrderQuantity && increaseOrderQuantity(id)}
+          >
+            +
+          </button>
         </div>
         <div className="remove">
-          <button onClick={() => removeFromOrder(id)}>
+          <button onClick={() => removeFromOrder && removeFromOrder(id)}>
             <img src={TrashIcon} alt="" />
           </button>
         </div>

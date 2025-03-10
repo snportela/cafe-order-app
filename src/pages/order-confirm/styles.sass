@@ -3,13 +3,16 @@
 .order-confirm
     background-color: $pink
     min-height: 100vh
-    padding: 3%
+    padding: 120px 0 50px 0 
     display: flex
     flex-direction: column
     gap: 2rem
     color: $brown
     position: relative
-    margin-top: 4rem
+
+    .order-items
+        display: flex
+        flex-direction: column
 
     h1
         text-align: center
@@ -91,9 +94,7 @@
         
 @media screen and (max-width: 500px)
     .order-confirm
-        justify-content: flex-start
-        gap: 1.25rem
-
+    
         .buttons
             align-items: center
 

@@ -24,7 +24,10 @@ const MenuItem = ({ id, name, price, imgUrl, slug, type }: MenuItemProps) => {
         <p className="item-name">{name}</p>
         <div className="add-section">
           <p className="price">{formatCurrency(price)}</p>
-          <button className="add-btn" onClick={() => increaseOrderQuantity(id)}>
+          <button
+            className="add-btn"
+            onClick={() => increaseOrderQuantity && increaseOrderQuantity(id)}
+          >
             +
           </button>
         </div>

@@ -13,8 +13,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<MainMenu />} />
-          <Route path="/menu/:category" element={<Menu />} />
           <Route path="/menu/:category/:slug" element={<SingleItem />} />
+          <Route path="/menu/:category" element={<Menu />} />
           <Route path="/confirmation" element={<OrderConfirm />} />
         </Routes>
       </OrderProvider>

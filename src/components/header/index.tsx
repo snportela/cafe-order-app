@@ -25,7 +25,10 @@ const Header = ({ showBackBtn, showOrderIcon }: HeaderProps) => {
         Sasha's Coffee Shop
       </Link>
       {showOrderIcon && (
-        <button onClick={openOrder} className="waiter-icon">
+        <button
+          onClick={() => openOrder && openOrder()}
+          className="waiter-icon"
+        >
           <img src={FoodTray} alt="" />
           {orderQuantity > 0 && (
             <div className="order-quantity">{orderQuantity}</div>
