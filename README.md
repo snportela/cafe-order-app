@@ -28,7 +28,7 @@
 <h2 id="about">📌 About</h2>
 
 <p>
-  With this app, the customers of "Sasha's Coffee Shop", would be able to see the stablishment's menu and place their order through their devices. Here are some screenshots of the app:
+  With this app, the customers of "Sasha's Coffee Shop", would be able to see the stablishment's menu and place their order through their devices.
 </p>
 
 Visit the [Sasha's Coffee Shop](https://sasha-coffee-shop.pages.dev/) website.
